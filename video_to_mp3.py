@@ -22,7 +22,7 @@ def convert_videos_to_mp3(folder, bitrate=DEFAULT_BITRATE):
 
     # Iterate through files in the folder
     for file in os.listdir(folder):
-        if file.endswith(('.mp4', '.avi', '.mov', '.mkv', '.flv', '.wmv', '.webm')):
+        if file.endswith(('.mp4', '.avi', '.mov', '.mkv', '.flv', '.wmv', '.webm', '.MP4')):
             # Get the full path of input and output files
             input_file = os.path.join(folder, file)
             output_file = os.path.join(folder, os.path.splitext(file)[0] + '.mp3')
